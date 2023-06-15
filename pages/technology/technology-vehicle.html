@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon-32x32.png">
+  <title>Space tourism website | By Saif.</title>
+  <link rel="stylesheet" href="../../normalize.css">
+  <link rel="stylesheet" href="../../navbar/style-nav.css">
+  <link rel="stylesheet" href="style-technology.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Bellefair&family=DM+Sans:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+  <header>
+    <a href="../../index.html"><img src="../../assets/shared/logo.svg" alt="" class="logo"></a>
+    <nav>
+      <ul class="nav__list nav__open" data-visible="false">
+        <li class="nav__list__items"><strong>00</strong><a href="../../index.html" class="nav__anchor">Home</a></li>
+        <li class="nav__list__items"><strong>01</strong><a href="../destination/destination-moon.html"
+            class="nav__anchor">Destination</a></li>
+        <li class="nav__list__items"><strong>02</strong><a href="../crew/crew-commander.html"
+            class="nav__anchor">Crew</a></li>
+        <li class="nav__list__items"><strong>03</strong><a href="technology-vehicle.html"
+            class="nav__anchor active">Technology</a></li>
+      </ul>
+    </nav>
+    <button class="hamburger" aria-expanded="false"></button>
+  </header>
+  <main>
+    <h6 class="page__intro"><strong class="bold">03</strong>Space launch 101</h6>
+    <section class="technology-all">
+      <span class="page-img"  data-aos="zoom-in"></span>
+      <section class="technology-article">
+        <div class="technology__dots">
+          <a href="technology-vehicle.html" class="dot-anchor anchor-active" data-aos="fade-right" data-aos-delay="0"><div class="dot anchor-active"><span>1</span></div></a>
+          <a href="technology-spaceport.html" class="dot-anchor" data-aos="fade-right" data-aos-delay="100"><div class="dot"><span>2</span></div></a>
+          <a href="technology-capsule.html" class="dot-anchor" data-aos="fade-right" data-aos-delay="200"><div class="dot"><span>3</span></div></a>
+        </div>
+        <div class="technology-content">
+          <span class="technology__type" data-aos="fade-right" data-aos-delay="0">The terminology...</span>
+          <span class="technology__name" data-aos="fade-right" data-aos-delay="100">Launch vehicle</span>
+          <p class="page__paragraph" data-aos="fade-right" data-aos-delay="200">
+            A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a
+            payload from Earth's surface to space, usually to Earth orbit or beyond. Our
+            WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall,
+            it's quite an awe-inspiring sight on the launch pad!
+          </p>
+        </div>
+      </section>
+    </section>
+  </main>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="../../navbar/nav-script.js"></script>
+</body>
+
+</html>

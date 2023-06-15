@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon-32x32.png">
+  <title>Space tourism website | By Saif.</title>
+  <link rel="stylesheet" href="../../normalize.css">
+  <link rel="stylesheet" href="../../navbar/style-nav.css">
+  <link rel="stylesheet" href="style-crew.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Bellefair&family=DM+Sans:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+  <header>
+    <a href="../../index.html"><img src="../../assets/shared/logo.svg" alt="" class="logo"></a>
+    <nav>
+      <ul class="nav__list nav__open" data-visible="false">
+        <li class="nav__list__items"><strong>00</strong><a href="../../index.html" class="nav__anchor">Home</a></li>
+        <li class="nav__list__items"><strong>01</strong><a href="../destination/destination-moon.html"
+            class="nav__anchor">Destination</a></li>
+        <li class="nav__list__items"><strong>02</strong><a href="crew-commander.html"
+            class="nav__anchor active">Crew</a></li>
+        <li class="nav__list__items"><strong>03</strong><a href="../technology/technology-vehicle.html"
+            class="nav__anchor">Technology</a></li>
+      </ul>
+    </nav>
+    <button class="hamburger" aria-expanded="false"></button>
+  </header>
+  <h6 class="page__intro"><strong class="bold">02</strong>Meet your crew</h6>
+  <main>
+    <section class="crew-all">
+      <div class="crew-member">
+        <div class="member-img" data-aos="fade-left" data-aos-delay="0">
+          <img src="../../assets/crew/image-douglas-hurley.png" alt="">
+          <span class="line-break"></span>
+        </div>
+      </div>
+      <div class="crew__content">
+        <div class="crew__dots" data-aos="fade-right" data-aos-delay="0">
+          <span class="dot dot__active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+        <span class="crew__job" data-aos="fade-right" data-aos-delay="0">Commander</span>
+        <span class="crew__name" data-aos="fade-right" data-aos-delay="100">Douglas Hurley</span>
+        <p class="page__paragraph" data-aos="fade-right" data-aos-delay="200">
+          Douglas Gerald Hurley is an American engineer, former Marine Corps pilot
+          and former NASA astronaut. He launched into space for the third time as
+          commander of Crew Dragon Demo-2.
+        </p>
+      </div>
+    </section>
+    <span><a href="" class="crew-btn btn-left"><img src="../../assets/crew/chevron-left.svg" alt=""></a></span>
+    <span><a href="crew-specialist.html" class="crew-btn btn-right"><img src="../../assets/crew/chevron-right.svg" alt=""></a></span>
+  </main>
+  <style>
+    .btn-left {
+      display: none;
+    }
+  </style>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="../../navbar/nav-script.js"></script>
+</body>
+
+</html>

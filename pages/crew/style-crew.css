@@ -1,0 +1,320 @@
+
+body {
+    background-image: url('../../assets/crew/background-crew-mobile.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+main {
+    position: relative;
+}
+
+.page__intro {
+    font-size: 1.6rem;
+    color: var(--white);
+    font-family: var(--intro-font);
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    margin-top: 10rem;
+    text-align: center;
+}
+
+strong {
+    font-weight: 500;
+    opacity: 50%;
+}
+
+.crew-member {
+    display: flex;
+    flex-direction: column;
+    margin-block: 4rem;
+}
+
+.member-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.5s, filter 0.5s;
+}
+
+.member-img img {
+    width: 50%;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.member-img:hover {
+    transform: scale(1.04);
+    filter: drop-shadow(0px 0px 2px var(--very-light-blue));
+}
+
+.line-break {
+    display: block;
+    background-color: var(--very-light-blue);
+    margin: 0 auto;
+    height: 0.008rem;
+    width: 90%;
+    opacity: 20%;
+}
+
+.crew__dots {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    padding-bottom: 1rem;
+}
+
+.dot {
+    width: 1rem;
+    aspect-ratio: 1/1;
+    background-color: var(--very-light-blue);
+    border-radius: 50%;
+    opacity: 50%;
+}
+
+.dot__active {
+    background-color: var(--white);
+    opacity: 100%;
+    transform: scale(1.3);
+}
+
+.crew__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.crew__job {
+    font-size: 1.6rem;
+    opacity: 50%;
+}
+
+.crew__job, 
+.crew__name {
+    font-family: var(--heading-font);
+    color: var(--white);
+    font-weight: 100;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.crew__name {
+    font-size: 2.4rem;
+}
+
+.page__paragraph {
+    font-size: 1.5rem;
+    font-family: var(--para-font);
+    color: var(--very-light-blue);
+    line-height: 1.5;
+    text-align: center;
+    max-width: 90%;
+    margin-bottom: 7rem;
+}
+
+.crew-btn {
+    width: 2.5rem;
+    background-repeat: no-repeat;
+    transition: transform 0.3s;
+    opacity: 30%;
+    filter: invert();
+}
+
+.crew-btn:hover {
+    transform: scale(1.1);
+    opacity: 80%;
+}
+
+.btn-left {
+    position: absolute;
+    top: 25%;
+    left: 2rem;
+    z-index: 999999;
+}
+
+.btn-right {
+    position: absolute;
+    top: 25%;
+    right: 2rem;
+    background-color: transparent;
+    backdrop-filter: blur(100%);
+}
+
+
+@media only screen and (min-width:650px) {
+    body {
+        background-image: url('../../assets/crew/background-crew-tablet.jpg');
+        background-size: 100% 100%;
+    }
+    .bold {
+        display: inline-block;
+    }
+    .page__intro {
+        padding-left: 2.5em;
+        font-size: 2rem;
+        text-align: start;
+        margin-bottom: 4rem;
+    }
+    .crew-all {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .crew__dots {
+        order: 1;
+        padding-top: 2rem;
+    }
+    .dot {
+        width: 1.3rem;
+    }
+    .crew__job {
+        font-size: 2.4rem;
+    }
+    .crew__name {
+        font-size: 4rem;
+    }
+    .crew-member {
+        flex-direction: column-reverse;
+        margin-bottom: 0;
+        gap: 6rem;
+        margin-top: 0;
+    }
+    .line-break {
+        display: none;
+    }
+    .page__paragraph {
+        margin-bottom: 0;
+        max-width: 60%;
+    }
+    .crew-btn {
+        width: 3rem;
+    }
+    .btn-left {
+        top: 50%;
+        left: 3rem;
+    }
+    .btn-right {
+        top: 50%;
+        right: 3rem;
+    }
+}
+
+
+@media only screen and (min-width:1000px) {
+    body {
+        overflow: hidden;
+    } 
+    .crew-all {
+        max-width: 80%;
+        margin: 0 auto;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    .page__intro {
+        padding-left: 0;
+        max-width: 80%;
+        margin: 10rem auto 4rem auto;
+    }
+    .crew__content {
+        align-items: flex-start;
+        max-width: 60%;
+    }
+    .crew__job, 
+    .crew__name, 
+    .page__paragraph {
+        text-align: start;
+    }
+    .crew__job {
+        font-size: 3rem;
+    }
+    .crew__name {
+        font-size: 5.3rem;
+    }
+    .page__paragraph {
+        max-width: 80%;
+    }
+    .dot {
+        width: 1.5rem;
+    }
+    .member-img {
+        position: relative;
+        top: -12rem;
+    }
+    .member-img img {
+        width: 100%;
+    }
+    .crew-btn {
+        width: 3.5rem;
+    }
+    .btn-left {
+        top: 20%;
+        left: 3rem;
+    }
+    .btn-right {
+        top: 20%;
+        right: 3rem;
+    }
+}
+
+@media only screen and (min-width:1100px) {
+    .member-img img {
+        width: 90%;
+    }
+}
+
+@media only screen and (min-width:1200px) {
+    .member-img img {
+        width: 85%;
+    }
+}
+
+@media only screen and (min-width:1400px) {
+    body {
+        height: 100vh;
+    }
+    .page__intro {
+        font-size: 3rem;
+    }
+    .crew__job {
+        font-size: 3.2rem;
+    }
+    .crew__name {
+        font-size: 6rem;
+    }
+    .page__paragraph {
+        font-size: 2rem;
+    }
+    .crew-btn {
+        width: 4rem;
+    }
+    .btn-left {
+        top: 10%;
+        left: 4rem;
+    }
+    .btn-right {
+        top: 10%;
+        right: 4rem;
+    }
+}
+
+@media only screen and (min-width:1500px) {
+    .crew__content {
+        justify-content: center;
+    }
+    .line-break {
+        display: block;
+        height: 0.1rem;
+    }
+    .crew-btn {
+        width: 5rem;
+    }
+    .btn-left {
+        top: 20%;
+        left: 5rem;
+    }
+    .btn-right {
+        top: 20%;
+        right: 5rem;
+    }
+}

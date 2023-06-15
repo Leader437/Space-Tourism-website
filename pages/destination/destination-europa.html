@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon-32x32.png">
+  <title>Space tourism website | By Saif.</title>
+  <link rel="stylesheet" href="../../normalize.css">
+  <link rel="stylesheet" href="../../navbar/style-nav.css">
+  <link rel="stylesheet" href="style-destination.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Bellefair&family=DM+Sans:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+  <header>
+    <a href="../../index.html"><img src="../../assets/shared/logo.svg" alt="" class="logo"></a>
+    <nav>
+      <ul class="nav__list nav__open" data-visible="false">
+        <li class="nav__list__items"><strong>00</strong><a href="../../index.html" class="nav__anchor">Home</a></li>
+        <li class="nav__list__items"><strong>01</strong><a href="destination-moon.html"
+            class="nav__anchor active">Destination</a></li>
+        <li class="nav__list__items"><strong>02</strong><a href="../crew/crew-commander.html"
+            class="nav__anchor">Crew</a></li>
+        <li class="nav__list__items"><strong>03</strong><a href="../technology/technology-vehicle.html"
+            class="nav__anchor">Technology</a></li>
+      </ul>
+    </nav>
+    <button class="hamburger" aria-expanded="false"></button>
+  </header>
+  <main>
+    <section class="destination-all">
+      <div class="destination-intro">
+        <h6 class="page__intro"><strong class="bold">01</strong>Pick your destination</h6>
+        <img src="../../assets/destination/image-europa.png" class="planet-pic" data-aos="fade-right"></span>
+      </div>
+
+      <section class="destination-sec">
+        <div class="destination-content">
+          <ul class="destination-list">
+            <li class="destination-item" data-aos="fade-left" data-aos-delay="0"><a href="destination-moon.html" class="destination-anchor">Moon</a></li>
+            <li class="destination-item" data-aos="fade-left" data-aos-delay="100"><a href="destination-mars.html" class="destination-anchor">Mars</a></li>
+            <li class="destination-item" data-aos="fade-left" data-aos-delay="200"><a href="destination-europa.html"
+                class="destination-anchor anchor-active">Europa</a></li>
+            <li class="destination-item" data-aos="fade-left" data-aos-delay="300"><a href="destination-titan.html" class="destination-anchor">Titan</a></li>
+          </ul>
+          <h2 class="moon__heading page__heading" data-aos="fade-left" data-aos-delay="0">Europa</h2>
+          <p class="page__paragraph" data-aos="fade-left" data-aos-delay="100">
+            The smallest of the four Galilean moons orbiting Jupiter, Europa is a
+            winter lover’s dream. With an icy surface, it’s perfect for a bit of
+            ice skating, curling, hockey, or simple relaxation in your snug
+            wintery cabin.
+          </p>
+        </div>
+        <span class="line-break"></span>
+        <div class="destination-distance" data-aos="fade-left" data-aos-delay="200">
+          <div class="distance__items">
+            <span class="distance__item__name">Avg. distance</span>
+            <span class="distance__item__value">628 mil. km</span>
+          </div>
+          <div class="distance__items">
+            <span class="distance__item__name">Est. travel time</span>
+            <span class="distance__item__value">3 years</span>
+          </div>
+        </div>
+      </section>
+    </section>
+  </main>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="../../navbar/nav-script.js"></script>
+</body>
+
+</html>

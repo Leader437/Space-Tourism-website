@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <title>Space tourism website | By Saif.</title>
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="navbar/style-nav.css">
+  <link rel="stylesheet" href="style-home.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Bellefair&family=DM+Sans:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+  <header>
+    <a href="index.html"><img src="assets/shared/logo.svg" alt="" class="logo"></a>
+    <nav>
+      <ul class="nav__list nav__open" data-visible="false">
+        <li class="nav__list__items"><strong>00</strong><a href="index.html" class="nav__anchor active">Home</a></li>
+        <li class="nav__list__items"><strong>01</strong><a href="pages/destination/destination-moon.html"
+            class="nav__anchor">Destination</a></li>
+        <li class="nav__list__items"><strong>02</strong><a href="pages/crew/crew-commander.html"
+            class="nav__anchor">Crew</a></li>
+        <li class="nav__list__items"><strong>03</strong><a href="pages/technology/technology-vehicle.html"
+            class="nav__anchor">Technology</a></li>
+      </ul>
+    </nav>
+    <button class="hamburger" aria-expanded="false"></button>
+  </header>
+  <main>
+    <div class="home__content">
+      <h6 class="page__intro" data-aos="fade-right" data-aos-delay="0">So, you want to travel to</h6>
+      <h2 class="home__heading page__heading" data-aos="fade-right" data-aos-delay="100">Space</h2>
+      <p class="page__paragraph" data-aos="fade-right" data-aos-delay="200">
+        Let’s face it; if you want to go to space, you might as well genuinely go to
+        outer space and not hover kind of on the edge of it. Well sit back, and relax
+        because we’ll give you a truly out of this world experience!
+      </p>
+    </div>
+    <a href="pages/destination/destination-moon.html" class="main__btn" data-aos="fade-left">Explore</a>
+  </main>
+  <style>
+    main {
+      display: flex;
+    }
+  </style>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="navbar/nav-script.js"></script>
+</body>
+
+</html>
